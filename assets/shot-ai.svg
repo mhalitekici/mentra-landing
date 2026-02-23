@@ -1,0 +1,59 @@
+﻿<svg width="720" height="1480" viewBox="0 0 720 1480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="1480">
+      <stop offset="0" stop-color="#0B1322"/>
+      <stop offset="1" stop-color="#09101C"/>
+    </linearGradient>
+    <linearGradient id="chat" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF6C45"/>
+      <stop offset="1" stop-color="#FF9652"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1480" rx="64" fill="url(#bg)"/>
+  <rect x="48" y="56" width="624" height="64" rx="20" fill="#121B2E"/>
+  <text x="84" y="96" fill="#FFFFFF" font-size="24" font-family="Manrope, Arial, sans-serif" font-weight="700">AI Ogretmen Asistani</text>
+
+  <rect x="48" y="152" width="624" height="124" rx="24" fill="#121B2E"/>
+  <text x="84" y="206" fill="#FFFFFF" font-size="30" font-family="Manrope, Arial, sans-serif" font-weight="700">Model: Mentra Tutor Pro</text>
+  <text x="84" y="244" fill="#AFC2E3" font-size="22" font-family="Manrope, Arial, sans-serif">Soru, plan, odev ve geri bildirim icin hazir.</text>
+
+  <rect x="48" y="304" width="624" height="1010" rx="28" fill="#111A2D"/>
+
+  <g transform="translate(84,348)">
+    <rect width="420" height="164" rx="22" fill="#1D2A45"/>
+    <text x="24" y="56" fill="#FFFFFF" font-size="24" font-family="Manrope, Arial, sans-serif" font-weight="600">Yarin icin 11. sinif</text>
+    <text x="24" y="90" fill="#FFFFFF" font-size="24" font-family="Manrope, Arial, sans-serif" font-weight="600">trigonometri mini sinav</text>
+    <text x="24" y="124" fill="#A8BEDF" font-size="20" font-family="Manrope, Arial, sans-serif">20 soru + cevap anahtari</text>
+  </g>
+
+  <g transform="translate(216,536)">
+    <rect width="420" height="248" rx="24" fill="url(#chat)"/>
+    <text x="24" y="58" fill="#FFFFFF" font-size="24" font-family="Manrope, Arial, sans-serif" font-weight="700">Hazir! 20 soruluk deneme</text>
+    <text x="24" y="96" fill="#FFECE3" font-size="21" font-family="Manrope, Arial, sans-serif">- 10 temel kavram</text>
+    <text x="24" y="130" fill="#FFECE3" font-size="21" font-family="Manrope, Arial, sans-serif">- 6 orta seviye problem</text>
+    <text x="24" y="164" fill="#FFECE3" font-size="21" font-family="Manrope, Arial, sans-serif">- 4 ileri seviye yorum</text>
+    <text x="24" y="206" fill="#FFFFFF" font-size="20" font-family="Manrope, Arial, sans-serif">PDF ve Word formatinda olusturuldu.</text>
+  </g>
+
+  <g transform="translate(84,816)">
+    <rect width="552" height="188" rx="24" fill="#1D2A45"/>
+    <text x="24" y="56" fill="#FFFFFF" font-size="25" font-family="Manrope, Arial, sans-serif" font-weight="700">Ek istemler</text>
+    <rect x="24" y="78" width="504" height="2" fill="#2B3D63"/>
+    <rect x="24" y="96" width="180" height="40" rx="12" fill="#263857"/>
+    <rect x="216" y="96" width="196" height="40" rx="12" fill="#263857"/>
+    <rect x="24" y="144" width="232" height="40" rx="12" fill="#263857"/>
+    <text x="44" y="122" fill="#A8BEDF" font-size="18" font-family="Manrope, Arial, sans-serif">Sinav sorusu olustur</text>
+    <text x="236" y="122" fill="#A8BEDF" font-size="18" font-family="Manrope, Arial, sans-serif">Ders plani cikar</text>
+    <text x="44" y="170" fill="#A8BEDF" font-size="18" font-family="Manrope, Arial, sans-serif">Odev degerlendir</text>
+  </g>
+
+  <g transform="translate(84,1034)">
+    <rect width="552" height="248" rx="24" fill="#1D2A45"/>
+    <text x="24" y="56" fill="#FFFFFF" font-size="25" font-family="Manrope, Arial, sans-serif" font-weight="700">Sonuc</text>
+    <text x="24" y="100" fill="#A8BEDF" font-size="22" font-family="Manrope, Arial, sans-serif">Hazirlama suresi: 12 sn</text>
+    <text x="24" y="138" fill="#A8BEDF" font-size="22" font-family="Manrope, Arial, sans-serif">Kapsam: MEB kazanimi uyumlu</text>
+    <text x="24" y="176" fill="#A8BEDF" font-size="22" font-family="Manrope, Arial, sans-serif">Paylasim: PDF + metin</text>
+    <rect x="24" y="196" width="202" height="34" rx="12" fill="#2ECC92"/>
+    <text x="42" y="220" fill="#0A1C14" font-size="18" font-family="Manrope, Arial, sans-serif" font-weight="700">Otomatik kaydedildi</text>
+  </g>
+</svg>

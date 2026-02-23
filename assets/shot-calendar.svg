@@ -1,0 +1,67 @@
+﻿<svg width="720" height="1480" viewBox="0 0 720 1480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="1480">
+      <stop offset="0" stop-color="#0E1423"/>
+      <stop offset="1" stop-color="#0B1120"/>
+    </linearGradient>
+    <linearGradient id="h" x1="60" y1="180" x2="660" y2="320">
+      <stop offset="0" stop-color="#FF663D"/>
+      <stop offset="1" stop-color="#FF9640"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1480" rx="64" fill="url(#bg)"/>
+  <rect x="48" y="56" width="624" height="64" rx="20" fill="#141E34"/>
+  <rect x="74" y="76" width="160" height="24" rx="12" fill="#2A3858"/>
+  <rect x="544" y="76" width="94" height="24" rx="12" fill="#2A3858"/>
+
+  <rect x="48" y="152" width="624" height="184" rx="28" fill="url(#h)"/>
+  <text x="84" y="218" fill="#FFFFFF" font-size="34" font-family="Manrope, Arial, sans-serif" font-weight="800">Haftalik Program</text>
+  <text x="84" y="264" fill="#FFE3D6" font-size="24" font-family="Manrope, Arial, sans-serif">Bosluklari otomatik doldur, cakismayi aninda yakala.</text>
+
+  <rect x="48" y="370" width="624" height="1010" rx="28" fill="#141E34"/>
+
+  <g transform="translate(84,420)">
+    <rect width="552" height="74" rx="18" fill="#1E2C49"/>
+    <text x="24" y="46" fill="#A8BEDF" font-size="24" font-family="Manrope, Arial, sans-serif">Pazartesi</text>
+    <text x="432" y="46" fill="#FFFFFF" font-size="24" font-family="Space Grotesk, Arial, sans-serif" font-weight="700">5 ders</text>
+  </g>
+
+  <g transform="translate(84,510)">
+    <rect width="552" height="176" rx="24" fill="#1A2844"/>
+    <rect x="22" y="26" width="508" height="56" rx="16" fill="#25395F"/>
+    <rect x="22" y="94" width="508" height="56" rx="16" fill="#25395F"/>
+    <circle cx="50" cy="54" r="12" fill="#FF6F46"/>
+    <circle cx="50" cy="122" r="12" fill="#4A8CFF"/>
+    <text x="78" y="60" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">17:00 TYT Turkce - Duru A.</text>
+    <text x="78" y="128" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">19:00 AYT Fizik - Aras G.</text>
+  </g>
+
+  <g transform="translate(84,706)">
+    <rect width="552" height="176" rx="24" fill="#1A2844"/>
+    <rect x="22" y="26" width="508" height="56" rx="16" fill="#25395F"/>
+    <rect x="22" y="94" width="508" height="56" rx="16" fill="#25395F"/>
+    <circle cx="50" cy="54" r="12" fill="#2ECC92"/>
+    <circle cx="50" cy="122" r="12" fill="#F3BE53"/>
+    <text x="78" y="60" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">18:00 Geometri - Umut D.</text>
+    <text x="78" y="128" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">20:30 Kimya - Selin N.</text>
+  </g>
+
+  <g transform="translate(84,902)">
+    <rect width="552" height="176" rx="24" fill="#1A2844"/>
+    <rect x="22" y="26" width="508" height="56" rx="16" fill="#25395F"/>
+    <rect x="22" y="94" width="508" height="56" rx="16" fill="#25395F"/>
+    <circle cx="50" cy="54" r="12" fill="#E86161"/>
+    <circle cx="50" cy="122" r="12" fill="#8C79FF"/>
+    <text x="78" y="60" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">16:30 Biyoloji - Melis T.</text>
+    <text x="78" y="128" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">21:00 Problemler - Deniz H.</text>
+  </g>
+
+  <g transform="translate(84,1098)">
+    <rect width="552" height="252" rx="24" fill="#1A2844"/>
+    <text x="24" y="52" fill="#FFFFFF" font-size="28" font-family="Manrope, Arial, sans-serif" font-weight="700">Akilli Plan Onerisi</text>
+    <rect x="24" y="78" width="504" height="2" fill="#283B61"/>
+    <text x="24" y="128" fill="#A8BEDF" font-size="22" font-family="Manrope, Arial, sans-serif">Bos zaman: Cuma 18:30 - 20:00</text>
+    <text x="24" y="168" fill="#A8BEDF" font-size="22" font-family="Manrope, Arial, sans-serif">Yuksek oncelik: AYT Matematik tekrar</text>
+    <text x="24" y="208" fill="#A8BEDF" font-size="22" font-family="Manrope, Arial, sans-serif">Tahmini net artis: +6 puan / hafta</text>
+  </g>
+</svg>

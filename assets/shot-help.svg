@@ -1,0 +1,56 @@
+﻿<svg width="720" height="1480" viewBox="0 0 720 1480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="1480">
+      <stop offset="0" stop-color="#0F1829"/>
+      <stop offset="1" stop-color="#0A111E"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1480" rx="64" fill="url(#bg)"/>
+
+  <rect x="48" y="56" width="624" height="64" rx="20" fill="#16223B"/>
+  <text x="84" y="96" fill="#FFFFFF" font-size="24" font-family="Manrope, Arial, sans-serif" font-weight="700">Yardim ve Iletisim</text>
+
+  <rect x="48" y="152" width="624" height="190" rx="28" fill="#17253F"/>
+  <text x="84" y="214" fill="#FFFFFF" font-size="32" font-family="Manrope, Arial, sans-serif" font-weight="700">Destek Merkezi</text>
+  <text x="84" y="256" fill="#AFC2E3" font-size="22" font-family="Manrope, Arial, sans-serif">Hesap, rapor, odeme ve planlama icin hizli cozumler.</text>
+  <rect x="84" y="282" width="220" height="34" rx="10" fill="#2ECC92"/>
+  <text x="102" y="306" fill="#0D1D15" font-size="18" font-family="Manrope, Arial, sans-serif" font-weight="700">Ortalama cevap: 2 saat</text>
+
+  <rect x="48" y="372" width="624" height="1008" rx="28" fill="#16223B"/>
+
+  <g transform="translate(84,420)">
+    <rect width="552" height="132" rx="20" fill="#1E2C49"/>
+    <circle cx="46" cy="66" r="24" fill="#FF6B43"/>
+    <text x="86" y="58" fill="#FFFFFF" font-size="24" font-family="Manrope, Arial, sans-serif" font-weight="700">E-posta Destegi</text>
+    <text x="86" y="94" fill="#A8BEDF" font-size="21" font-family="Manrope, Arial, sans-serif">devmentra@gmail.com</text>
+  </g>
+
+  <g transform="translate(84,572)">
+    <rect width="552" height="132" rx="20" fill="#1E2C49"/>
+    <circle cx="46" cy="66" r="24" fill="#4A8CFF"/>
+    <text x="86" y="58" fill="#FFFFFF" font-size="24" font-family="Manrope, Arial, sans-serif" font-weight="700">Canli Yardim Talebi</text>
+    <text x="86" y="94" fill="#A8BEDF" font-size="21" font-family="Manrope, Arial, sans-serif">Uygulama icinden tek dokunusla acilir</text>
+  </g>
+
+  <g transform="translate(84,744)">
+    <text x="0" y="32" fill="#FFFFFF" font-size="30" font-family="Manrope, Arial, sans-serif" font-weight="700">Sik sorulan sorular</text>
+
+    <rect x="0" y="56" width="552" height="110" rx="18" fill="#1E2C49"/>
+    <text x="22" y="102" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">Ogrenci nasil eklenir?</text>
+    <text x="22" y="136" fill="#A8BEDF" font-size="19" font-family="Manrope, Arial, sans-serif">Ana ekran > Ogrenci Ekle adimiyla.</text>
+
+    <rect x="0" y="178" width="552" height="110" rx="18" fill="#1E2C49"/>
+    <text x="22" y="224" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">Ders cakismasi nasil anlasilir?</text>
+    <text x="22" y="258" fill="#A8BEDF" font-size="19" font-family="Manrope, Arial, sans-serif">Planlama aninda otomatik uyari verir.</text>
+
+    <rect x="0" y="300" width="552" height="110" rx="18" fill="#1E2C49"/>
+    <text x="22" y="346" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">Raporu veliye nasil yollarim?</text>
+    <text x="22" y="380" fill="#A8BEDF" font-size="19" font-family="Manrope, Arial, sans-serif">Rapor kartindan e-posta gonder secenegiyle.</text>
+
+    <rect x="0" y="438" width="552" height="188" rx="20" fill="#1B2945"/>
+    <text x="22" y="490" fill="#FFFFFF" font-size="28" font-family="Manrope, Arial, sans-serif" font-weight="700">Yardim butonu</text>
+    <text x="22" y="530" fill="#A8BEDF" font-size="21" font-family="Manrope, Arial, sans-serif">Sag alttan acilir: e-posta, WhatsApp, SSS, demo.</text>
+    <circle cx="502" cy="534" r="36" fill="#FF6B43"/>
+    <text x="488" y="544" fill="#FFFFFF" font-size="28" font-family="Manrope, Arial, sans-serif" font-weight="700">?</text>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+﻿<svg width="720" height="1480" viewBox="0 0 720 1480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="1480">
+      <stop offset="0" stop-color="#101727"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="stat" x1="48" y1="152" x2="672" y2="332">
+      <stop offset="0" stop-color="#FF6B43"/>
+      <stop offset="1" stop-color="#FF964A"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1480" rx="64" fill="url(#bg)"/>
+  <rect x="48" y="56" width="624" height="64" rx="20" fill="#15203A"/>
+  <text x="84" y="96" fill="#FFFFFF" font-size="24" font-family="Manrope, Arial, sans-serif" font-weight="700">Rapor ve Gelir Merkezi</text>
+
+  <rect x="48" y="152" width="624" height="184" rx="28" fill="url(#stat)"/>
+  <text x="84" y="214" fill="#FFFFFF" font-size="28" font-family="Manrope, Arial, sans-serif" font-weight="700">Aylik Ozet</text>
+  <text x="84" y="268" fill="#FFFFFF" font-size="54" font-family="Space Grotesk, Arial, sans-serif" font-weight="700">68.400 TL</text>
+  <text x="84" y="304" fill="#FFE8DB" font-size="22" font-family="Manrope, Arial, sans-serif">Tahsilat orani: %91 · 32 rapor olusturuldu</text>
+
+  <rect x="48" y="370" width="624" height="1010" rx="28" fill="#15203A"/>
+
+  <g transform="translate(84,420)">
+    <text x="0" y="32" fill="#FFFFFF" font-size="30" font-family="Manrope, Arial, sans-serif" font-weight="700">Performans grafigi</text>
+    <rect x="0" y="56" width="552" height="240" rx="20" fill="#1D2C4B"/>
+    <polyline points="28,224 112,180 196,190 280,132 364,146 448,92 524,68" stroke="#58A6FF" stroke-width="8" fill="none"/>
+    <polyline points="28,212 112,202 196,170 280,178 364,128 448,140 524,116" stroke="#2ECC92" stroke-width="8" fill="none"/>
+  </g>
+
+  <g transform="translate(84,744)">
+    <text x="0" y="30" fill="#FFFFFF" font-size="30" font-family="Manrope, Arial, sans-serif" font-weight="700">Son raporlar</text>
+    <rect x="0" y="54" width="552" height="110" rx="18" fill="#1D2C4B"/>
+    <rect x="0" y="176" width="552" height="110" rx="18" fill="#1D2C4B"/>
+    <rect x="0" y="298" width="552" height="110" rx="18" fill="#1D2C4B"/>
+    <text x="24" y="98" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">Mert K. - AYT Matematik Raporu</text>
+    <text x="24" y="130" fill="#A8BEDF" font-size="19" font-family="Manrope, Arial, sans-serif">PDF indirildi · 22 Subat</text>
+    <text x="24" y="220" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">Ece T. - Fizik Gelisim Analizi</text>
+    <text x="24" y="252" fill="#A8BEDF" font-size="19" font-family="Manrope, Arial, sans-serif">Veliye e-posta gonderildi · 21 Subat</text>
+    <text x="24" y="342" fill="#FFFFFF" font-size="22" font-family="Manrope, Arial, sans-serif">Asli D. - Haftalik Odev Takibi</text>
+    <text x="24" y="374" fill="#A8BEDF" font-size="19" font-family="Manrope, Arial, sans-serif">AI ozet eklendi · 20 Subat</text>
+  </g>
+
+  <g transform="translate(84,1178)">
+    <rect width="552" height="172" rx="22" fill="#1B2A47"/>
+    <text x="24" y="54" fill="#FFFFFF" font-size="28" font-family="Manrope, Arial, sans-serif" font-weight="700">Hizli Paylasim</text>
+    <rect x="24" y="80" width="154" height="58" rx="14" fill="#2A4068"/>
+    <rect x="192" y="80" width="154" height="58" rx="14" fill="#2A4068"/>
+    <rect x="360" y="80" width="168" height="58" rx="14" fill="#2A4068"/>
+    <text x="58" y="117" fill="#BFD0EC" font-size="20" font-family="Manrope, Arial, sans-serif">PDF</text>
+    <text x="227" y="117" fill="#BFD0EC" font-size="20" font-family="Manrope, Arial, sans-serif">Mail</text>
+    <text x="400" y="117" fill="#BFD0EC" font-size="20" font-family="Manrope, Arial, sans-serif">WhatsApp</text>
+  </g>
+</svg>

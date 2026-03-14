@@ -4,6 +4,8 @@
     "./assets/videos/tanitim.mp4",
     "./assets/videos/promo.mp4",
     "./assets/videos/mentra-tanitim.mp4",
+    "./assets/videos/tanitim.mov",
+    "./assets/videos/promo.mov",
     "./assets/videos/tanitim.webm",
   ];
 
@@ -304,5 +306,20 @@
         navToggle.setAttribute("aria-expanded", "false");
       }
     }
+  });
+
+  var panelTabs = Array.from(document.querySelectorAll(".panel-tab"));
+  var panelContents = Array.from(document.querySelectorAll(".panel-content"));
+
+  panelTabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      panelTabs.forEach(function (t) { t.classList.remove("active"); });
+      panelContents.forEach(function (c) { c.classList.add("hidden"); });
+      tab.classList.add("active");
+      var target = document.getElementById("tab-" + tab.getAttribute("data-tab"));
+      if (target) {
+        target.classList.remove("hidden");
+      }
+    });
   });
 })();

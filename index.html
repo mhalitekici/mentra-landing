@@ -1,28 +1,28 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mentra | Öğretmen Operasyon Platformu</title>
+  <title>Mentra | iOS Beta Testi Açıldı — Öğretmen ve Öğrenci Platformu</title>
   <meta
     name="description"
-    content="Mentra: Özel ders öğretmenleri için akıllı planlama, yapay zeka destekli içerik üretimi, raporlama, tahsilat takibi ve yardım merkezi tek platformda."
+    content="Mentra iOS beta testine başladı! Takvim, dijital tahta, Gemini AI, quiz oyunu, öğrenci paneli — hepsi tek uygulamada. Beta'ya katılmak için mail atın."
   />
   <meta name="robots" content="index, follow" />
   <meta property="og:locale" content="tr_TR" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Mentra" />
-  <meta property="og:title" content="Mentra | Öğretmen Operasyon Platformu" />
+  <meta property="og:title" content="Mentra | iOS Beta Testi Açıldı" />
   <meta
     property="og:description"
-    content="Özel ders öğretmenleri için planlama, öğrenci takibi, yapay zeka destekli içerik üretimi, raporlama ve tahsilat yönetimi tek platformda."
+    content="Mentra iOS beta testine başladı! Öğretmenler için takvim, dijital tahta, AI asistanı. Öğrenciler için ders takibi ve öğretmen bağlantısı tek platformda."
   />
   <meta property="og:image" content="./assets/mentra-logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mentra | Öğretmen Operasyon Platformu" />
+  <meta name="twitter:title" content="Mentra | iOS Beta Testi Açıldı" />
   <meta
     name="twitter:description"
-    content="Özel ders öğretmenleri için planlama, öğrenci takibi, yapay zeka destekli içerik üretimi, raporlama ve tahsilat yönetimi tek platformda."
+    content="Mentra iOS beta testine başladı! Beta'ya katılmak için devmentra@gmail.com adresine mail atın."
   />
   <meta name="twitter:image" content="./assets/mentra-logo.png" />
   <meta name="theme-color" content="#0b1120" />
@@ -39,6 +39,15 @@
   <div class="bg-glow bg-glow-a" aria-hidden="true"></div>
   <div class="bg-glow bg-glow-b" aria-hidden="true"></div>
 
+  <!-- iOS Beta Announcement Bar -->
+  <div class="announcement-bar" id="announcement-bar">
+    <div class="announcement-inner">
+      <span class="announcement-badge">YENİ</span>
+      <span class="announcement-text">iOS Beta Testi Açıldı — Beta'ya katılmak için <a href="mailto:devmentra@gmail.com?subject=Mentra%20Beta%20Kaydı" class="announcement-link">devmentra@gmail.com</a> adresine mail atın</span>
+    </div>
+    <button class="announcement-close" id="announcement-close" aria-label="Kapat">×</button>
+  </div>
+
   <header class="site-header" id="home">
     <div class="container nav-wrap">
       <a href="#home" class="brand" aria-label="Mentra ana sayfa">
@@ -54,26 +63,25 @@
         <a href="#video">Tanıtım</a>
         <a href="#features">Özellikler</a>
         <a href="#screens">Ekranlar</a>
-        <a href="#future">Vizyon</a>
-        <a href="#team">Ekip</a>
-        <a href="#support">Yardım</a>
-        <a href="#contact" class="nav-mobile-only">Yakında</a>
+        <a href="#faq">SSS</a>
+        <a href="#beta" class="nav-mobile-only">Beta'ya Katıl</a>
       </nav>
 
-      <a href="#contact" class="btn btn-small btn-primary">Yakında</a>
+      <a href="mailto:devmentra@gmail.com?subject=Mentra%20Beta%20Kaydı" class="btn btn-small btn-primary">Beta'ya Katıl</a>
     </div>
   </header>
 
   <main>
-    <section class="video-hero section-pad" id="video">
-      <div class="container video-shell" data-reveal>
-        <p class="eyebrow">Tanıtım Videosu</p>
-        <h1 class="video-title">Mentra çok yakında sizlerle.</h1>
-        <p class="video-text">
-          Uygulama çıkışına kadar bu alanda resmi tanıtım videosu yer alacak.
-        </p>
+    <!-- VIDEO HERO — ilk bölüm -->
+    <section class="video-hero-top" id="video">
+      <div class="container video-top-shell" data-reveal>
+        <div class="video-top-head">
+          <p class="eyebrow">Tanıtım Videosu</p>
+          <h1 class="video-top-title">Mentra'yı 60 saniyede tanıyın.</h1>
+          <p class="video-top-sub">Ders takvimi, dijital tahta, Gemini AI, quiz oyunu ve öğrenci paneli — hepsi tek uygulamada.</p>
+        </div>
 
-        <div class="video-stage">
+        <div class="video-top-stage">
           <video
             id="promo-video"
             class="promo-video"
@@ -81,210 +89,329 @@
             muted
             playsinline
             preload="metadata"
-            poster="./assets/shot-dashboard.svg"
+            poster="./assets/mentra-logo.png"
           ></video>
           <div class="video-placeholder" id="promo-video-placeholder">
-            <h3>Tanıtım videosu çok yakında burada.</h3>
-            <p>Tanıtım videosu yüklendiğinde bu alanda otomatik olarak oynatılır.</p>
+            <img src="./assets/mentra-logo.png" alt="Mentra" class="video-logo-poster" />
+            <h3>Tanıtım videosu çok yakında.</h3>
+            <p>Video hazır olduğunda otomatik algılanır ve burada oynatılır.</p>
+            <div class="video-guide">
+              <p class="video-guide-label">Video eklemek için:</p>
+              <code class="video-guide-code">assets/videos/tanitim.mp4</code>
+              <code class="video-guide-code">assets/videos/tanitim.mov</code>
+              <p class="video-guide-sub">mp4 ve mov formatları desteklenir.</p>
+            </div>
           </div>
+        </div>
+
+        <div class="video-top-cta">
+          <a href="mailto:devmentra@gmail.com?subject=Mentra%20Beta%20Kaydı" class="btn btn-primary btn-large">Beta'ya Kayıt Ol — Ücretsiz</a>
+          <a href="#features" class="btn btn-ghost">Özellikleri Keşfet</a>
         </div>
       </div>
     </section>
 
-    <section class="hero section-pad">
+    <!-- HERO -->
+    <section class="hero section-pad" id="hero">
       <div class="container hero-grid">
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow">MENTRA v2.2.0 | Profesyonel eğitim operasyon platformu</p>
-          <h1>Öğretmenlik operasyonunu tek merkezden yönet.</h1>
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            iOS Beta Aktif
+          </div>
+          <h1>Öğretmen ve öğrenci,<br />aynı ekosistemde.</h1>
           <p class="hero-text">
-            Mentra, özel ders takip uygulaması olarak öğretmenler için planlama, öğrenci takibi,
-            yapay zeka asistanı, raporlama, ödeme yönetimi ve yardım deneyimini tek bir mobil odakta birleştirir.
+            Mentra; ders takvimi, dijital tahta, Gemini AI asistanı, quiz oyunu ve öğrenci panelini
+            tek mobil uygulamada bir araya getirir. Öğretmen planlar, öğrenci takip eder.
           </p>
 
           <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary">Çıkış Duyurusunu Bekle</a>
-            <a href="#features" class="btn btn-ghost">Tüm Özellikleri Gör</a>
+            <a href="mailto:devmentra@gmail.com?subject=Mentra%20Beta%20Kaydı" class="btn btn-primary btn-large">
+              Beta'ya Kayıt Ol — Ücretsiz
+            </a>
+            <a href="#screens" class="btn btn-ghost">Ekranları Keşfet</a>
           </div>
 
-          <ul class="trust-list" aria-label="Temel güven göstergeleri">
-            <li>Akıllı ders planlama</li>
-            <li>Yapay zeka destekli içerik üretimi</li>
-            <li>Rapor, PDF ve veli iletişim akışı</li>
-          </ul>
+          <div class="hero-beta-note">
+            Beta kaydı için <strong>devmentra@gmail.com</strong> adresine mail atmanız yeterli. Sınırlı kontenjan.
+          </div>
         </div>
 
         <div class="hero-visual" data-reveal>
           <article class="phone-card phone-main">
-            <img src="./assets/shot-dashboard.svg" alt="Mentra ana panel ekranı" loading="lazy" data-screen="dashboard" data-fallback="./assets/shot-dashboard.svg" />
-            <p>Günlük panel ve ders takvimi</p>
+            <img src="./assets/shot-calendar.svg" alt="Mentra takvim ekranı" loading="lazy" data-screen="calendar" data-fallback="./assets/shot-calendar.svg" />
+            <p>Ders takvimi ve planlama</p>
           </article>
           <article class="phone-card phone-side phone-left">
-            <img src="./assets/shot-ai.svg" alt="Mentra yapay zeka asistanı ekranı" loading="lazy" data-screen="ai" data-fallback="./assets/shot-ai.svg" />
-            <p>Yapay zeka asistanı</p>
+            <img src="./assets/shot-dashboard.svg" alt="Mentra ana panel" loading="lazy" data-screen="dashboard" data-fallback="./assets/shot-dashboard.svg" />
+            <p>Öğretmen ana paneli</p>
           </article>
           <article class="phone-card phone-side phone-right">
-            <img src="./assets/shot-reports.svg" alt="Mentra rapor merkezi ekranı" loading="lazy" data-screen="reports" data-fallback="./assets/shot-reports.svg" />
-            <p>Rapor ve Gelir</p>
+            <img src="./assets/shot-ai.svg" alt="Mentra Gemini AI asistanı" loading="lazy" data-screen="ai" data-fallback="./assets/shot-ai.svg" />
+            <p>Gemini AI asistanı</p>
           </article>
         </div>
       </div>
 
       <div class="container metric-strip" data-reveal>
         <article>
-          <strong>8+</strong>
-          <span>Çekirdek modül</span>
+          <strong>iOS Beta</strong>
+          <span>Şu an aktif</span>
         </article>
         <article>
-          <strong>1 Panel</strong>
-          <span>Tüm operasyonlar tek yerde</span>
+          <strong>2 Panel</strong>
+          <span>Öğretmen + Öğrenci</span>
         </article>
         <article>
-          <strong>24/7</strong>
-          <span>Yardım ve iletişim kanalları</span>
+          <strong>Gemini AI</strong>
+          <span>Yapay zeka destekli</span>
         </article>
         <article>
-          <strong>Mobil Odaklı</strong>
-          <span>Hızlı, pratik, sahada kullanıma uygun</span>
+          <strong>10+ Modül</strong>
+          <span>Tek uygulamada</span>
         </article>
       </div>
     </section>
 
+    <!-- FEATURES -->
     <section class="section-pad" id="features">
       <div class="container">
         <div class="section-head" data-reveal>
           <p class="eyebrow">Neler yapabilir?</p>
-          <h2>Mentra ile tüm iş akışlarını birleştir.</h2>
+          <h2>Öğretmenden öğrenciye<br />eksiksiz platform.</h2>
+          <p class="section-subtext">
+            Ders planlamadan AI destekli içerik üretimine, dijital tahtadan öğrenci takibine kadar
+            ihtiyacınız olan her şey Mentra'da.
+          </p>
         </div>
 
         <div class="feature-grid">
           <article class="feature-card" data-reveal>
-            <h3>Akıllı Ders Planlama</h3>
-            <p>Haftalık programı yönet, çakışmaları otomatik yakala, boşlukları verimli doldur.</p>
+            <div class="feature-icon">📅</div>
+            <h3>Takvim ve Ders Planlama</h3>
+            <p>Aylık, haftalık, günlük görünüm. Gün ve saat seçimi, haftalık tekrar ve otomatik çakışma kontrolü.</p>
           </article>
           <article class="feature-card" data-reveal>
-            <h3>Öğrenci Profili ve Takip</h3>
-            <p>Öğrenci bilgileri, performans notları, ders geçmişi ve hedefler tek profilde.</p>
-          </article>
-          <article class="feature-card" data-reveal>
-            <h3>Yapay Zeka Öğretmen Asistanı</h3>
-            <p>Soru üretimi, ders planı, ödev geri bildirimi ve özet oluşturma tek dokunuşla.</p>
-          </article>
-          <article class="feature-card" data-reveal>
+            <div class="feature-icon">🎨</div>
             <h3>Dijital Tahta</h3>
-            <p>Canlı not alma, tekrar açma, ders içeriğini kalıcı ve takip edilebilir hale getirme.</p>
+            <p>Kalem, marker, fosforlu, silgi ve lasso araçları. Sayfalı yapı, geri al, ileri al ve kaydet.</p>
           </article>
           <article class="feature-card" data-reveal>
-            <h3>Milyoner Bilgi Yarışması</h3>
-            <p>Oyunlaştırılmış soru akışı ile motivasyonu artır, sonuçları analiz et.</p>
+            <div class="feature-icon">👥</div>
+            <h3>Öğrenci Yönetimi</h3>
+            <p>Öğrenci listesi, devam oranı, performans puanı. Öğretmen kodu ile saniyeler içinde öğrenci bağlantısı.</p>
           </article>
           <article class="feature-card" data-reveal>
-            <h3>Rapor ve PDF Üretimi</h3>
-            <p>Veliye gönderilebilir profesyonel raporlar, indirilebilir PDF ve paylaşım seçenekleri.</p>
+            <div class="feature-icon">✨</div>
+            <h3>Gemini AI Asistanı</h3>
+            <p>Öğrenciye özel quiz üretimi, ders planı hazırlama, ödev geri bildirimi ve anlık içerik özetleme.</p>
           </article>
           <article class="feature-card" data-reveal>
-            <h3>Gelir ve Tahsilat Takibi</h3>
-            <p>Gelir özetleri, bakiye takibi ve tahsilat durumlarını net bir panelde gör.</p>
+            <div class="feature-icon">🎮</div>
+            <h3>Quiz Oyunu</h3>
+            <p>50:50, seyirci, x2 joker sistemi. Geri sayım, puan ve seri takibi ile oyunlaştırılmış sınav deneyimi.</p>
           </article>
           <article class="feature-card" data-reveal>
-            <h3>Yardım ve SSS Merkezi</h3>
-            <p>Uygulama içi destek, yardım butonu, sık sorulan sorular ve hızlı iletişim aksiyonu.</p>
+            <div class="feature-icon">📊</div>
+            <h3>Ders Geçmişi ve Raporlar</h3>
+            <p>Her dersin özet, ödev ve not etiketleri. Öğrenci ve tarih bazlı filtreleme, 4 zaman aralığı seçeneği.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon">💬</div>
+            <h3>Anlık Mesajlaşma</h3>
+            <p>Öğretmen ve öğrenci arası gerçek zamanlı iletişim. Ders hatırlatmaları ve anlık bildirimler.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon">📱</div>
+            <h3>Öğrenci Paneli</h3>
+            <p>Bağımsız öğrenci uygulaması: dersler, ödevler, AI asistanı, mesajlaşma ve öğretmen bağlantısı.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- SCREENS -->
     <section class="section-pad showcase" id="screens">
       <div class="container">
         <div class="section-head" data-reveal>
-          <p class="eyebrow">Uygulama ekran görüntüleri</p>
-          <h2>Mentra arayüzünden öne çıkan ekranlar</h2>
+          <p class="eyebrow">Uygulama Ekranları</p>
+          <h2>İki panel, tam kontrol.</h2>
+          <p class="section-subtext">Öğretmen ve öğrenci panellerini keşfet. Her iki taraf için güçlü, sezgisel bir deneyim.</p>
         </div>
 
-        <div class="shot-grid">
-          <button class="shot-card" data-screen="dashboard" data-fallback="./assets/shot-dashboard.svg" data-image="./assets/shot-dashboard.svg" data-title="Ana Panel" data-caption="Günlük panel, hızlı aksiyonlar, motivasyon kartı ve genel görünüm.">
-            <img src="./assets/shot-dashboard.svg" alt="Ana panel görüntüsü" loading="lazy" />
-            <span>Ana Panel</span>
-          </button>
-          <button class="shot-card" data-screen="lessons" data-fallback="./assets/shot-dashboard.svg" data-image="./assets/shot-dashboard.svg" data-title="Günlük Dersler" data-caption="Bugünkü dersler ve yaklaşan hatırlatmalar tek ekranda.">
-            <img src="./assets/shot-dashboard.svg" alt="Günlük dersler görüntüsü" loading="lazy" />
-            <span>Günlük Dersler</span>
-          </button>
-          <button class="shot-card" data-screen="calendar" data-fallback="./assets/shot-calendar.svg" data-image="./assets/shot-calendar.svg" data-title="Takvim" data-caption="Aylık, haftalık ve günlük görünümle planı yönet.">
-            <img src="./assets/shot-calendar.svg" alt="Takvim görüntüsü" loading="lazy" />
-            <span>Takvim</span>
-          </button>
-          <button class="shot-card" data-screen="ai" data-fallback="./assets/shot-ai.svg" data-image="./assets/shot-ai.svg" data-title="Yapay Zeka Asistanı" data-caption="Soru üretimi, plan ve ders içeriği hazırlama akışı.">
-            <img src="./assets/shot-ai.svg" alt="Yapay zeka asistanı görüntüsü" loading="lazy" />
-            <span>Yapay Zeka</span>
-          </button>
-          <button class="shot-card" data-screen="reports" data-fallback="./assets/shot-reports.svg" data-image="./assets/shot-reports.svg" data-title="Rapor ve Gelir" data-caption="Rapor kartları, PDF indirme ve performans takibi.">
-            <img src="./assets/shot-reports.svg" alt="Rapor ve gelir görüntüsü" loading="lazy" />
-            <span>Rapor ve Gelir</span>
-          </button>
+        <div class="panel-switcher" data-reveal>
+          <button class="panel-tab active" data-tab="teacher">Öğretmen Paneli</button>
+          <button class="panel-tab" data-tab="student">Öğrenci Paneli</button>
+        </div>
+
+        <div class="panel-content" id="tab-teacher">
+          <div class="shot-grid">
+            <button class="shot-card" data-screen="dashboard" data-fallback="./assets/shot-dashboard.svg" data-image="./assets/shot-dashboard.svg" data-title="Ana Sayfa" data-caption="Öğretmen ana paneli: bugünkü dersler, yaklaşan program ve genel durum özeti.">
+              <img src="./assets/shot-dashboard.svg" alt="Öğretmen ana sayfası" loading="lazy" />
+              <span>Ana Sayfa</span>
+            </button>
+            <button class="shot-card" data-screen="calendar" data-fallback="./assets/shot-calendar.svg" data-image="./assets/shot-calendar.svg" data-title="Takvim" data-caption="Aylık, haftalık ve günlük görünümle ders programını yönet. Tek tıkla ders ekle, haftalık tekrar kur.">
+              <img src="./assets/shot-calendar.svg" alt="Takvim ekranı" loading="lazy" />
+              <span>Takvim</span>
+            </button>
+            <button class="shot-card" data-screen="whiteboard" data-fallback="./assets/shot-dashboard.svg" data-image="./assets/shot-dashboard.svg" data-title="Dijital Tahta" data-caption="Kalem, marker, fosforlu, silgi ve lasso araçlarıyla ders içeriğini çiz. Sayfalı yapı, geri al ve kaydet.">
+              <img src="./assets/shot-dashboard.svg" alt="Dijital tahta ekranı" loading="lazy" />
+              <span>Dijital Tahta</span>
+            </button>
+            <button class="shot-card" data-screen="students" data-fallback="./assets/shot-dashboard.svg" data-image="./assets/shot-dashboard.svg" data-title="Öğrenciler" data-caption="Tüm öğrencileri listele. Devam oranı, toplam ders sayısı ve performans puanı tek görünümde.">
+              <img src="./assets/shot-dashboard.svg" alt="Öğrenciler ekranı" loading="lazy" />
+              <span>Öğrenciler</span>
+            </button>
+            <button class="shot-card" data-screen="ai" data-fallback="./assets/shot-ai.svg" data-image="./assets/shot-ai.svg" data-title="AI Asistanı" data-caption="Gemini 2.5 destekli AI ile öğrenciye özel quiz üret, ders planı hazırla, anında içerik oluştur.">
+              <img src="./assets/shot-ai.svg" alt="AI asistanı ekranı" loading="lazy" />
+              <span>AI Asistanı</span>
+            </button>
+            <button class="shot-card" data-screen="reports" data-fallback="./assets/shot-reports.svg" data-image="./assets/shot-reports.svg" data-title="Geçmiş Dersler" data-caption="Her dersin özet, ödev ve notunu görüntüle. Öğrenci ve tarih bazlı filtrele, 4 zaman aralığı.">
+              <img src="./assets/shot-reports.svg" alt="Geçmiş dersler ekranı" loading="lazy" />
+              <span>Geçmiş Dersler</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="panel-content hidden" id="tab-student">
+          <div class="shot-grid">
+            <button class="shot-card" data-screen="student-home" data-fallback="./assets/shot-dashboard.svg" data-image="./assets/shot-dashboard.svg" data-title="Ana Sayfa" data-caption="Motivasyon kartı, yaklaşan ders, son ödevler ve bağlı öğretmen bilgisi tek ekranda.">
+              <img src="./assets/shot-dashboard.svg" alt="Öğrenci ana sayfası" loading="lazy" />
+              <span>Ana Sayfa</span>
+            </button>
+            <button class="shot-card" data-screen="student-lessons" data-fallback="./assets/shot-dashboard.svg" data-image="./assets/shot-dashboard.svg" data-title="Derslerim" data-caption="Bugün, yaklaşan ve geçmiş dersler — Planlandı ve tamamlandı durumlarıyla listelenir.">
+              <img src="./assets/shot-dashboard.svg" alt="Öğrenci dersleri ekranı" loading="lazy" />
+              <span>Derslerim</span>
+            </button>
+            <button class="shot-card" data-screen="student-ai" data-fallback="./assets/shot-ai.svg" data-image="./assets/shot-ai.svg" data-title="AI Asistanı" data-caption="Son derste ne işlendiğini, ödevleri ve ders notlarını AI asistana sorabilirsin.">
+              <img src="./assets/shot-ai.svg" alt="Öğrenci AI asistanı ekranı" loading="lazy" />
+              <span>AI Asistanı</span>
+            </button>
+            <button class="shot-card" data-screen="student-homework" data-fallback="./assets/shot-dashboard.svg" data-image="./assets/shot-dashboard.svg" data-title="Ödevlerim" data-caption="Öğretmenin atadığı ödevleri takip et, teslim tarihlerini kaçırma.">
+              <img src="./assets/shot-dashboard.svg" alt="Öğrenci ödevler ekranı" loading="lazy" />
+              <span>Ödevlerim</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-pad process">
+    <!-- HOW IT WORKS -->
+    <section class="section-pad process" id="how">
       <div class="container process-grid">
         <div data-reveal>
-          <p class="eyebrow">Çalışma akışı</p>
-          <h2>3 adımda tam kontrol</h2>
+          <p class="eyebrow">Nasıl çalışır?</p>
+          <h2>Üç adımda tam kontrol.</h2>
+          <p class="section-subtext">
+            Mentra'yı kullanmaya başlamak dakikalar alır. Öğretmen hesabı oluştur, öğrencini bağla, planlamaya başla.
+          </p>
         </div>
 
         <ol class="step-list" data-reveal>
           <li>
-            <h3>1. Planla</h3>
-            <p>Derslerini takvimde oluştur, saatleri netleştir, çakışmayı otomatik engelle.</p>
+            <h3>1. Kayıt Ol ve Profil Oluştur</h3>
+            <p>Öğretmen hesabı aç. Sana özel TCHR-XXXXXX kodunu öğrencilerinle paylaş — bağlantı anında kurulur.</p>
           </li>
           <li>
-            <h3>2. Yürüt</h3>
-            <p>Dijital tahta, yapay zeka asistanı ve bilgi yarışması araçlarıyla dersi daha etkili hale getir.</p>
+            <h3>2. Planla, Yürüt, Geliştir</h3>
+            <p>Takvimde ders oluştur, tahta ile anlat, AI ile quiz üret. Öğrenciyle anlık mesajlaş, motivasyonu artır.</p>
           </li>
           <li>
-            <h3>3. Raporla ve Takip Et</h3>
-            <p>Ders sonuçlarını, tahsilatı ve gelişimi tek panelden düzenli şekilde takip et.</p>
+            <h3>3. Takip Et ve Raporla</h3>
+            <p>Ders geçmişini özet ve notlarla incele. Öğrenci kendi panelinden dersleri, ödevleri ve gelişimini takip eder.</p>
           </li>
         </ol>
       </div>
     </section>
 
+
+    <!-- BETA REGISTRATION -->
+    <section class="section-pad beta-section" id="beta">
+      <div class="container">
+        <article class="beta-card" data-reveal>
+          <div class="beta-badge-wrap">
+            <span class="beta-live-badge">
+              <span class="beta-dot"></span>
+              iOS Beta Aktif
+            </span>
+          </div>
+          <h2>Beta testine hemen katılın.</h2>
+          <p>
+            Mentra iOS beta sürümü sınırlı sayıda kullanıcı ile test aşamasında. Uygulamayı ilk kullananlar
+            arasında yer almak ve geri bildiriminizle şekillendirmek için şimdi kayıt olun.
+          </p>
+
+          <div class="beta-steps">
+            <div class="beta-step">
+              <span class="beta-step-num">1</span>
+              <div>
+                <strong>Mail atın</strong>
+                <p>devmentra@gmail.com adresine "Beta Kaydı" konusuyla mail gönderin.</p>
+              </div>
+            </div>
+            <div class="beta-step">
+              <span class="beta-step-num">2</span>
+              <div>
+                <strong>Davet alın</strong>
+                <p>TestFlight daveti e-posta adresinize iletilir.</p>
+              </div>
+            </div>
+            <div class="beta-step">
+              <span class="beta-step-num">3</span>
+              <div>
+                <strong>İndirin ve kullanın</strong>
+                <p>TestFlight üzerinden uygulamayı indirip hemen kullanmaya başlayın.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="mailto:devmentra@gmail.com?subject=Mentra%20Beta%20Kaydı&body=Merhaba%2C%20Mentra%20iOS%20beta%20testine%20kat%C4%B1lmak%20istiyorum." class="btn btn-primary btn-large">
+            Beta'ya Katıl — devmentra@gmail.com
+          </a>
+
+          <p class="beta-fine">Ücretsiz beta erişimi. Sınırlı kontenjan — kaçırmayın.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- VISION -->
     <section class="section-pad future" id="future">
       <div class="container">
         <div class="section-head" data-reveal>
-          <p class="eyebrow">Vizyonumuz</p>
-          <h2>Mentra'nın gelecek yol haritası</h2>
+          <p class="eyebrow">Yol haritası</p>
+          <h2>Mentra'nın geleceği</h2>
           <p class="section-subtext">
-            Öğretmenlerin işini sadeleştiren, öğrencinin gelişimini görünür kılan ve eğitim teknolojisini
-            erişilebilir hale getiren güçlü bir ekosistem kuruyoruz.
+            Beta'dan sonra neler geliyor? Öğretmenlerin işini sadeleştiren, öğrencinin gelişimini görünür kılan
+            güçlü bir ekosistem kuruyoruz.
           </p>
         </div>
 
         <div class="future-grid" data-reveal>
           <article class="future-card">
-            <h3>Kişiselleştirilmiş Yapay Zeka Akışı</h3>
+            <h3>Android Desteği</h3>
+            <p>iOS beta tamamlandıktan sonra Android sürümü yayına girecek. Her öğretmen ve öğrenci için erişilebilir.</p>
+          </article>
+          <article class="future-card">
+            <h3>Kişiselleştirilmiş AI Akışı</h3>
             <p>Her öğrenci için seviyeye özel içerik, hedef odaklı öneri ve otomatik ilerleme analizi.</p>
           </article>
           <article class="future-card">
-            <h3>Tek Ekranda Tam Operasyon</h3>
-            <p>Ders planı, raporlama, tahsilat ve veli iletişimini daha hızlı tek panelden yönetme.</p>
-          </article>
-          <article class="future-card">
-            <h3>Ölçeklenebilir Eğitim Deneyimi</h3>
+            <h3>Ölçeklenebilir Yapı</h3>
             <p>Bireysel öğretmenden kurum yapısına kadar büyüyebilen sürdürülebilir bir ürün altyapısı.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- TEAM -->
     <section class="section-pad team" id="team">
       <div class="container">
         <div class="section-head" data-reveal>
           <p class="eyebrow">Ekibimiz</p>
           <h2>Mentra'yı geliştiren ekip</h2>
           <p class="section-subtext">
-            Ürünü sadece bir uygulama olarak değil, öğretmenin her gün kullandığı güçlü bir çalışma sistemi
-            olarak tasarlıyoruz.
+            Ürünü sadece bir uygulama olarak değil, öğretmenin her gün güvenle kullandığı
+            bir çalışma sistemi olarak tasarlıyoruz.
           </p>
         </div>
 
@@ -296,11 +423,11 @@
               </svg>
             </div>
             <div class="team-copy">
-              <p class="team-role">Geliştirici</p>
+              <p class="team-role">Kurucu Geliştirici</p>
               <h3>Mehmet Halit Ekici</h3>
               <p>
                 Mentra'nın ürün geliştirme, deneyim tasarımı ve teknik altyapı süreçlerini uçtan uca
-                yöneten geliştirici.
+                yöneten geliştirici. Gerçek saha ihtiyaçlarına göre karar, hızlı sürümleme.
               </p>
             </div>
             <div class="team-tags">
@@ -311,99 +438,82 @@
           </article>
 
           <article class="team-note" data-reveal>
-            <h3>Ekip yaklaşımı</h3>
+            <h3>Neden Mentra?</h3>
             <p>
-              Sade arayüz, güçlü otomasyon ve öğretmen odaklı gerçek kullanım senaryoları ile büyüyen
-              bir eğitim teknolojisi markası inşa ediyoruz.
+              Özel ders öğretmenleri her gün farklı araçlar arasında kayıp oluyor — takvim burada,
+              notlar orada, öğrenci takibi başka bir yerde. Mentra bunu tek çatı altında topluyor.
             </p>
             <ul>
               <li>Gerçek saha ihtiyaçlarına göre ürün kararı</li>
               <li>Hızlı sürümleme ve sürekli iyileştirme</li>
-              <li>Marka kimliği ile uyumlu tutarlı deneyim</li>
+              <li>Öğretmen geri bildirimiyle şekillenen özellikler</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section-pad support" id="support">
-      <div class="container support-grid">
-        <article class="support-main" data-reveal>
-          <p class="eyebrow">Yardım odaklı deneyim</p>
-          <h2>Her ekranda ulaşılabilir destek.</h2>
-          <p>
-            Uygulama içi yardım merkezi, e-posta desteği, SSS kütüphanesi ve site içindeki
-            yüzen yardım butonu ile kullanıcının takıldığı nokta cevapsız kalmaz.
-          </p>
-          <a class="btn btn-primary" href="mailto:devmentra@gmail.com?subject=Mentra%20Destek%20Talebi">Destek Talebi Gönder</a>
-        </article>
-
-        <div class="support-cards" data-reveal>
-          <article>
-            <h3>E-posta</h3>
-            <p>devmentra@gmail.com</p>
-          </article>
-          <article>
-            <h3>Yardım Butonu</h3>
-            <p>Sağ alttan açılır panel: SSS, demo, iletişim.</p>
-          </article>
-          <article>
-            <h3>İçerik</h3>
-            <p>Hesap, ders, rapor, ödeme, tema ve veri merkezi odaklı kapsamlı SSS.</p>
-          </article>
-          <article>
-            <h3>Marka Güveni</h3>
-            <p>Net iletişim kanalı, hukuki bağlantı ve açık ürün anlatımı.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
+    <!-- FAQ -->
     <section class="section-pad faq" id="faq">
       <div class="container">
         <div class="section-head" data-reveal>
-          <p class="eyebrow">Sık sorulan sorular</p>
-          <h2>Yayına hazır destek kütüphanesi</h2>
+          <p class="eyebrow">Merak edilenler</p>
+          <h2>Sık sorulan sorular</h2>
         </div>
 
         <div class="faq-list" data-reveal>
           <article class="faq-item">
-            <button class="faq-question" type="button">Öğrenci nasıl eklenir?</button>
-            <div class="faq-answer">Ana ekranda Öğrenci Ekle adımıyla temel bilgileri kaydedebilirsin.</div>
+            <button class="faq-question" type="button">Beta'ya nasıl katılabilirim?</button>
+            <div class="faq-answer">devmentra@gmail.com adresine "Beta Kaydı" konusuyla mail atmanız yeterli. TestFlight daveti e-posta adresinize iletilecektir. Kontenjan sınırlıdır.</div>
           </article>
           <article class="faq-item">
-            <button class="faq-question" type="button">Ders çakışması olursa ne olur?</button>
-            <div class="faq-answer">Sistem planlama anında çakışmayı algılar ve anında uyarı verir.</div>
+            <button class="faq-question" type="button">Öğrenci nasıl bağlanır?</button>
+            <div class="faq-answer">Öğretmen profil ekranındaki TCHR-XXXXXX kodunu öğrenciyle paylaşır. Öğrenci bu kodu girerek öğretmenine anında bağlanır.</div>
           </article>
           <article class="faq-item">
-            <button class="faq-question" type="button">Raporu veliye nasıl yollarım?</button>
-            <div class="faq-answer">Rapor kartındaki e-posta veya PDF paylaşım seçeneklerini kullanabilirsin.</div>
+            <button class="faq-question" type="button">Dijital tahta kaydedilir mi?</button>
+            <div class="faq-answer">Evet. Tahta ekranındaki Kaydet butonuyla çizimini kaydedebilir, ders geçmişine eklenmiş olarak sonradan tekrar açabilirsin.</div>
           </article>
           <article class="faq-item">
-            <button class="faq-question" type="button">Yapay zeka asistanı nelerde yardımcı olur?</button>
-            <div class="faq-answer">Soru üretimi, ders planı, ödev geri bildirimi ve içerik özetinde hız kazandırır.</div>
+            <button class="faq-question" type="button">AI asistanı ne yapabilir?</button>
+            <div class="faq-answer">Öğrenciye özel quiz üretir, ders planı hazırlar, ödev geri bildirimi verir ve ders içeriğini özetler. Gemini 2.5 ile çalışır — hızlı ve doğru.</div>
           </article>
           <article class="faq-item">
-            <button class="faq-question" type="button">Destek kanalları neler?</button>
-            <div class="faq-answer">Site yardım paneli, e-posta desteği ve uygulama içi yardım merkezi aktif kullanılır.</div>
+            <button class="faq-question" type="button">Öğrenci paneli ayrı bir uygulama mı?</button>
+            <div class="faq-answer">Evet. Öğrenci kendi hesabıyla giriş yapar; derslerini, ödevlerini, AI asistanını ve mesajlarını kendi panelinden bağımsız yönetir.</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button">Android ne zaman çıkacak?</button>
+            <div class="faq-answer">iOS beta testi tamamlandıktan sonra Android sürümü geliştirilecek. Beta süreci ilerledikçe güncelleme yapacağız.</div>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- FINAL CTA -->
     <section class="section-pad coming-soon" id="contact">
       <div class="container">
         <article class="coming-soon-card" data-reveal>
-          <p class="eyebrow">Çok Yakında</p>
-          <h2>Mentra çok yakında sizlerle.</h2>
+          <div class="beta-badge-wrap">
+            <span class="beta-live-badge">
+              <span class="beta-dot"></span>
+              iOS Beta Açık
+            </span>
+          </div>
+          <h2>İlk kullananlar arasında olun.</h2>
           <p>
-            Uygulamamız şu anda son hazırlık aşamasında. Lansmanla birlikte uygulama mağazası
-            bağlantılarını burada paylaşacağız.
+            Mentra iOS beta testine katılmak için <strong>devmentra@gmail.com</strong> adresine
+            "Beta Kaydı" konusuyla mail atmanız yeterli. Android sürümü çok yakında.
           </p>
+          <div class="coming-soon-cta">
+            <a href="mailto:devmentra@gmail.com?subject=Mentra%20Beta%20Kaydı&body=Merhaba%2C%20Mentra%20iOS%20beta%20testine%20kat%C4%B1lmak%20istiyorum." class="btn btn-primary btn-large">
+              Hemen Mail At — Beta'ya Katıl
+            </a>
+          </div>
           <div class="coming-soon-badges">
-            <span>iOS Çok Yakında</span>
+            <span>iOS Beta Aktif</span>
             <span>Android Çok Yakında</span>
-            <span>Tanıtım Sitesi Aktif</span>
+            <span>Ücretsiz Beta Erişimi</span>
           </div>
         </article>
       </div>
@@ -414,32 +524,32 @@
     <div class="container footer-grid">
       <div>
         <img src="./assets/mentra-logo.png" alt="Mentra" class="footer-logo" />
-        <p>Özel ders operasyonları için mobil odaklı, yapay zeka destekli, ölçeklenebilir marka deneyimi.</p>
+        <p>Öğretmen ve öğrenci için yapay zeka destekli, mobil odaklı eğitim platformu.</p>
       </div>
       <div>
         <h4>Hızlı Bağlantılar</h4>
-        <a href="#video">Tanıtım</a>
         <a href="#features">Özellikler</a>
         <a href="#screens">Ekranlar</a>
-        <a href="#future">Vizyon</a>
-        <a href="#team">Ekip</a>
-        <a href="#contact">Yakında</a>
+        <a href="#video">Tanıtım</a>
+        <a href="#beta">Beta Kaydı</a>
+        <a href="#faq">SSS</a>
       </div>
       <div>
-        <h4>Destek</h4>
+        <h4>İletişim</h4>
         <a href="mailto:devmentra@gmail.com">devmentra@gmail.com</a>
-        <a href="#faq">SSS Merkezi</a>
+        <a href="mailto:devmentra@gmail.com?subject=Mentra%20Beta%20Kaydı">Beta'ya Katıl</a>
+        <a href="mailto:devmentra@gmail.com?subject=Mentra%20Destek%20Talebi">Destek</a>
       </div>
       <div>
         <h4>Yasal</h4>
         <a href="mailto:devmentra@gmail.com?subject=Mentra%20Gizlilik%20Politikası%20Talebi">Gizlilik Politikası</a>
         <a href="mailto:devmentra@gmail.com?subject=Mentra%20Kullanım%20Koşulları%20Talebi">Kullanım Koşulları</a>
-        <p class="footer-note">Yasal metinler lansmanla birlikte yayınlanacaktır.</p>
+        <p class="footer-note">Yasal metinler lansman ile birlikte yayınlanacaktır.</p>
       </div>
     </div>
     <div class="container footer-bottom">
       <span>© <span id="year"></span> Mentra. Tüm hakları saklıdır.</span>
-      <span>Sürüm: Marka Sitesi v1</span>
+      <span>iOS Beta v1 — devmentra@gmail.com</span>
     </div>
   </footer>
 
@@ -450,10 +560,10 @@
   <aside class="help-panel" id="help-panel" aria-hidden="true">
     <h3>Yardım Merkezi</h3>
     <p>Hızlı işlem seç:</p>
-    <a href="mailto:devmentra@gmail.com?subject=Mentra%20Destek%20Talebi">E-posta gönder</a>
-    <a href="mailto:devmentra@gmail.com?subject=Mentra%20Öncelikli%20Destek%20Talebi">Öncelikli destek talebi</a>
+    <a href="mailto:devmentra@gmail.com?subject=Mentra%20Beta%20Kaydı">Beta'ya Katıl</a>
+    <a href="mailto:devmentra@gmail.com?subject=Mentra%20Destek%20Talebi">Destek talebi gönder</a>
     <button type="button" data-scroll="#faq">SSS bölümüne git</button>
-    <button type="button" data-scroll="#contact">Çok yakında bölümü</button>
+    <button type="button" data-scroll="#beta">Beta kayıt bölümü</button>
   </aside>
 
   <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Ekran görüntüsü önizleme">
@@ -474,9 +584,19 @@
       "name": "Mentra",
       "applicationCategory": "EducationApplication",
       "operatingSystem": "iOS, Android",
-      "description": "Özel ders öğretmenleri için planlama, öğrenci takibi, yapay zeka destekli içerik üretimi, raporlama ve tahsilat yönetimi sağlayan eğitim uygulaması."
+      "description": "Öğretmenler için takvim, dijital tahta, Gemini AI asistanı, quiz oyunu ve raporlama. Öğrenciler için ders takibi, ödev yönetimi ve öğretmen bağlantısı — tek platformda."
     }
   </script>
   <script src="./script.js"></script>
+  <script>
+    // Announcement bar close
+    var annClose = document.getElementById("announcement-close");
+    var annBar = document.getElementById("announcement-bar");
+    if (annClose && annBar) {
+      annClose.addEventListener("click", function () {
+        annBar.style.display = "none";
+      });
+    }
+  </script>
 </body>
 </html>
